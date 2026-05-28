@@ -157,20 +157,20 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
             </div>
           </div>
 
-          {/* Central Title and brand matching the template */}
+          {/* Central Title and SEO Optimized heading */}
           <div className="space-y-4 text-left">
-            <span className="text-xs tracking-[0.25em] font-extrabold text-accent uppercase font-montserrat flex items-center gap-2">
+            <h2 className="text-xs tracking-[0.25em] font-extrabold text-accent uppercase font-montserrat flex items-center gap-2">
               <Sparkle size={12} className="text-accent animate-pulse" />
-              RENTABILIADE IMOBILIÁRIA ATIVA
-            </span>
+              O MELHOR DO INVESTIMENTO IMOBILIÁRIO
+            </h2>
             <h1 className="text-4.5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide font-serif leading-none">
-              STUDIOS <br />
+              RENTABILIDADE EM <br />
               <span className="font-extrabold font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-accent">
-                LUCRATIVOS
+                SHORT STAY
               </span>
             </h1>
             <p className="text-slate-300 text-sm md:text-base max-w-xl leading-relaxed font-sans font-light">
-              Rentabilize acima da renda fixa e proteja-se da inflação em tijolo. Invista nos 2 maiores eixos de alta liquidez de São Paulo (<strong>Vila Olímpia e Higienópolis/Mackenzie</strong>) com gestão integrada.
+              Atinja o topo da <strong>rentabilidade</strong> extraindo o máximo do <strong>mercado imobiliário</strong> com os projetos <strong>Studios Lucrativos</strong>. Multiplique seu capital nos eixos de maior liquidez de São Paulo (Vila Olímpia e Higienópolis) através do turismo de negócios e lazer (short stay).
             </p>
           </div>
 

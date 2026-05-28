@@ -30,7 +30,7 @@ export default function WhyInvestSection() {
             A LÓGICA DO <span className="font-extrabold font-montserrat text-accent">SHORT STAY</span>
           </h2>
           <p className="text-text-muted text-sm md:text-base leading-relaxed font-sans font-light">
-            Como dois ativos imobiliários em microrregiões ultra-específicas de São Paulo trabalham em conjunto para liquidar a poupança e a renda fixa.
+            Entenda como dois ativos no <strong>mercado imobiliário</strong> em microrregiões ultra-específicas de São Paulo trabalham em conjunto para entregar <strong>rentabilidade máxima</strong> em um inteligente <strong>investimento imobiliário</strong> focado em short stay.
           </p>
         </div>
 

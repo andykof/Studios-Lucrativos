@@ -23,7 +23,7 @@ export default function TrustSection() {
             <span className="font-extrabold font-montserrat text-accent">VACÂNCIA MÍNIMA HISTÓRICA.</span>
           </h2>
           <p className="text-text-muted text-sm md:text-base leading-relaxed font-sans font-light text-left md:text-center">
-            A Vila Olímpia e Higienópolis foram milimetricamente selecionadas por se consolidarem como microzonas de altíssima escassez de terrenos e demanda orgânica perene. Na Vila Olímpia, milhares de multinacionais e sedes corporativas geram tráfego incessante de executivos; em Higienópolis, a colagem face a face com o Mackenzie e grandes polos hospitalares atrai um fluxo contínuo de estudantes e residentes de saúde qualificados o ano inteiro, garantindo solidez na ocupação do seu investimento.
+            A Vila Olímpia e Higienópolis foram milimetricamente selecionadas por se consolidarem como microzonas de altíssima escassez de terrenos e demanda orgânica perene no <strong>mercado imobiliário</strong>. Na Vila Olímpia, milhares de multinacionais e sedes corporativas geram tráfego incessante de executivos; em Higienópolis, a colagem face a face com o Mackenzie e grandes polos hospitalares atrai um fluxo contínuo de estudantes e residentes de saúde, garantindo <strong>rentabilidade máxima para seu investimento imobiliário</strong> no formato short stay.
           </p>
         </div>
 
