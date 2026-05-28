@@ -111,10 +111,10 @@ export default function FooterSection({ onOpenAdmin, onOpenPrivacy }: FooterSect
         </div>
 
         {/* Brand Developer Logotypes Showcase with only Studios Lucrativos and Grupo Kallas */}
-        <div className="border-t border-forest-light/30 pt-8 flex flex-wrap justify-center items-center gap-12 text-center opacity-85">
+        <div className="border-t border-forest-light/30 pt-8 flex flex-wrap justify-center items-center gap-6 md:gap-12 text-center opacity-85">
           
           {/* Logo 1: Studios Lucrativos */}
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-center gap-1 w-full sm:w-auto">
             <div className="flex items-center gap-1.5 bg-black/15 py-2 px-4 rounded-sm border border-forest-light/20">
               <span className="w-5 h-5 rounded bg-accent flex items-center justify-center text-forest-dark font-black font-montserrat text-xs">S</span>
               <span className="font-extrabold text-white text-xs tracking-[0.15em] font-montserrat uppercase">STUDIOS <span className="text-accent">LUCRATIVOS</span></span>
@@ -123,12 +123,12 @@ export default function FooterSection({ onOpenAdmin, onOpenPrivacy }: FooterSect
           </div>
 
           {/* Logo 2: Grupo Kallas */}
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-center gap-1 w-full sm:w-auto mt-2 sm:mt-0">
             <div className="flex items-center gap-1 bg-black/15 py-2 px-4 rounded-sm border border-forest-light/20">
               <span className="font-black text-white text-sm tracking-widest font-montserrat">KALLAS</span>
               <span className="text-[8px] font-mono text-accent uppercase font-bold border-l border-accent/40 pl-1.5 ml-1.5 leading-none">GRUPO</span>
             </div>
-            <span className="text-[8px] text-slate-500 font-mono tracking-widest uppercase">Parceiro Oficial de Incorporação</span>
+            <span className="text-[8px] text-slate-500 font-mono tracking-widest uppercase">Parceiro de Incorporação</span>
           </div>
 
         </div>

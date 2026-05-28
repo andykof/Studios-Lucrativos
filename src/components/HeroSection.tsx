@@ -100,7 +100,7 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
   };
 
   return (
-    <section id="hero" className="relative min-h-[100vh] md:min-h-screen flex items-center bg-forest-dark overflow-hidden py-16 px-4 md:px-8">
+    <section id="hero" className="relative min-h-[100vh] md:min-h-screen flex items-center bg-forest-dark overflow-hidden py-24 md:py-16 px-4 sm:px-6 md:px-8">
       {/* Background Graphic representing premium urban and architecture focus */}
       <div className="absolute inset-0 z-0">
         <img
@@ -110,47 +110,47 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
           className="w-full h-full object-cover opacity-45 object-center scale-100"
         />
         {/* Custom balanced dark masking: solid transparent layer + subtle direction gradients */}
-        <div className="absolute inset-0 bg-forest-dark/55" />
-        <div className="absolute inset-0 bg-gradient-to-r from-forest-dark/80 via-forest-dark/40 to-transparent md:block hidden" />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-dark via-transparent to-forest-dark/70" />
+        <div className="absolute inset-0 bg-forest-dark/70 md:bg-forest-dark/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-forest-dark/90 via-forest-dark/60 to-transparent md:block hidden" />
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-dark via-forest-dark/40 to-forest-dark/80" />
       </div>
 
       {/* Dynamic Gold Light Orbs */}
-      <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-accent/10 md:bg-accent/5 blur-3xl rounded-full pointer-events-none" />
 
       {/* Main Container */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-8">
+      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center pt-8 md:pt-12">
         
         {/* Left Specification Column + Monumental Headings */}
-        <div className="lg:col-span-7 flex flex-col justify-between h-full space-y-12">
+        <div className="lg:col-span-7 flex flex-col justify-between h-full space-y-10 md:space-y-12">
           
           {/* Header specification grid focusing on critical ICP metrics */}
-          <div className="space-y-6 border-b border-accent/20 pb-8 max-w-lg">
+          <div className="space-y-6 md:border-b border-accent/20 pb-4 md:pb-8 max-w-lg">
             
-            <div className="space-y-4 font-sans text-left">
-              <div className="flex flex-col gap-1">
-                <div className="flex items-baseline gap-2 text-white">
-                  <span className="text-xl md:text-2xl font-black font-montserrat tracking-tight text-accent animate-pulse">UNIKO VILA OLÍMPIA</span>
-                  <span className="text-xs font-mono uppercase tracking-widest text-slate-400">/ A partir de R$ 275k</span>
+            <div className="space-y-5 font-sans text-left">
+              <div className="flex flex-col gap-1.5 md:gap-1">
+                <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-2 text-white">
+                  <span className="text-xl sm:text-2xl font-black font-montserrat tracking-tight text-accent animate-pulse">UNIKO VILA OLÍMPIA</span>
+                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-slate-400">/ A partir de R$ 275k</span>
                 </div>
-                <span className="text-[11px] text-slate-300 font-light block">Estratégia Faria Lima: Demanda corporativa pagando o seu financiamento.</span>
+                <span className="text-xs md:text-[11px] text-slate-300 font-light block leading-relaxed">Estratégia Faria Lima: Demanda corporativa pagando o seu financiamento.</span>
               </div>
               
-              <div className="flex flex-col gap-1 border-t border-forest-light/30 pt-3">
-                <div className="flex items-baseline gap-2 text-white">
-                  <span className="text-xl md:text-2xl font-black font-montserrat tracking-tight text-accent">VERUS MACKENZIE</span>
-                  <span className="text-xs font-mono uppercase tracking-widest text-slate-400">/ R$ 13.900 o m²</span>
+              <div className="flex flex-col gap-1.5 md:gap-1 border-t border-forest-light/30 pt-4 md:pt-3">
+                <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-2 text-white">
+                  <span className="text-xl sm:text-2xl font-black font-montserrat tracking-tight text-accent">VERUS MACKENZIE</span>
+                  <span className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-slate-400">/ R$ 13.900 o m²</span>
                 </div>
-                <span className="text-[11px] text-slate-300 font-light block">Distorção em Higienópolis: Polo universitário com vacância histórica zero.</span>
+                <span className="text-xs md:text-[11px] text-slate-300 font-light block leading-relaxed">Distorção em Higienópolis: Polo universitário com vacância histórica zero.</span>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 text-left">
+            <div className="flex flex-wrap gap-2 text-left pt-2 md:pt-0">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection('plantas')}
-                className="px-6 py-2.5 bg-transparent border border-accent text-accent text-xs font-bold font-montserrat uppercase tracking-wider hover:bg-accent hover:text-white transition-all cursor-pointer rounded-sm"
+                className="w-full md:w-auto px-6 py-3.5 md:py-2.5 bg-transparent border border-accent text-accent text-xs font-bold font-montserrat uppercase tracking-wider hover:bg-accent hover:text-white transition-all cursor-pointer rounded-sm"
               >
                 Analisar as Plantas
               </motion.button>
@@ -159,17 +159,17 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
 
           {/* Central Title and SEO Optimized heading */}
           <div className="space-y-4 text-left">
-            <h2 className="text-xs tracking-[0.25em] font-extrabold text-accent uppercase font-montserrat flex items-center gap-2">
-              <Sparkle size={12} className="text-accent animate-pulse" />
-              O MELHOR DO INVESTIMENTO IMOBILIÁRIO
+            <h2 className="text-[11px] md:text-xs tracking-[0.2em] md:tracking-[0.25em] font-extrabold text-accent uppercase font-montserrat flex items-center gap-2">
+              <Sparkle size={12} className="text-accent animate-pulse shrink-0" />
+              <span className="leading-tight">O MELHOR DO INVESTIMENTO IMOBILIÁRIO</span>
             </h2>
-            <h1 className="text-4.5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide font-serif leading-none">
-              RENTABILIDADE EM <br />
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-wide font-serif leading-[1.05] md:leading-none">
+              RENTABILIDADE EM <br className="hidden sm:block" />
               <span className="font-extrabold font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-accent">
                 SHORT STAY
               </span>
             </h1>
-            <p className="text-slate-300 text-sm md:text-base max-w-xl leading-relaxed font-sans font-light">
+            <p className="text-slate-300 text-[15px] sm:text-sm md:text-base max-w-xl leading-relaxed font-sans font-light pt-2">
               Atinja o topo da <strong>rentabilidade</strong> extraindo o máximo do <strong>mercado imobiliário</strong> com os projetos <strong>Studios Lucrativos</strong>. Multiplique seu capital nos eixos de maior liquidez de São Paulo (Vila Olímpia e Higienópolis) através do turismo de negócios e lazer (short stay).
             </p>
           </div>
@@ -177,34 +177,34 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
         </div>
 
         {/* Right Conversion Lead Form - Gold Glassmorphism design suitable for high net worth buyers */}
-        <div className="lg:col-span-5 relative mt-8 lg:mt-0">
+        <div className="lg:col-span-5 relative mt-12 lg:mt-0 pb-12 md:pb-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.98, y: 15 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="w-full bg-forest-dark/95 backdrop-blur-md border border-accent/30 p-8 rounded-lg shadow-2xl relative overflow-hidden text-white"
+            className="w-full bg-forest-dark/95 backdrop-blur-md border border-accent/40 md:border-accent/30 p-6 md:p-8 rounded-lg shadow-2xl relative overflow-hidden text-white mx-auto sm:max-w-md lg:max-w-none"
           >
             {/* Top gold line */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent-hover to-accent" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 md:h-1 bg-gradient-to-r from-accent via-accent-hover to-accent" />
 
             {/* Form Header */}
-            <div className="mb-6 space-y-2 text-left">
-              <span className="text-[10px] tracking-widest font-bold font-montserrat text-accent uppercase">
-                Acesso Privilegiado VIP - Tabela Primeiro Lote
+            <div className="mb-8 md:mb-6 space-y-3 md:space-y-2 text-center md:text-left">
+              <span className="inline-block text-[10px] md:text-[10px] bg-accent/10 px-2 py-1 md:bg-transparent md:px-0 md:py-0 rounded-full md:rounded-none tracking-widest font-bold font-montserrat text-accent uppercase">
+                Acesso Privilegiado VIP - Tabela 1º Lote
               </span>
-              <h2 className="text-xl font-bold font-serif text-white tracking-wide leading-tight">
+              <h2 className="text-2xl md:text-xl font-bold font-serif text-white tracking-wide leading-tight">
                 Receba Planilhas de Payback e Fluxo de Obras
               </h2>
-              <p className="text-xs text-slate-300 font-light font-sans leading-relaxed">
+              <p className="text-xs md:text-xs text-slate-300 font-light font-sans leading-relaxed">
                 Preencha abaixo para receber metragens exatas, book comercial com as plantas de alta rentabilidade e fluxo completo de pagamento.
               </p>
             </div>
 
             {/* Entry Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-5 md:space-y-4">
               
               {/* Contact preference */}
-              <div className="space-y-1.5 text-left">
+              <div className="space-y-2 md:space-y-1.5 text-left">
                 <label className="block text-[10px] font-semibold uppercase tracking-wider text-accent font-montserrat">
                   Preferencia de Envio das Tabelas:
                 </label>
@@ -218,10 +218,10 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
                       key={pref.id}
                       type="button"
                       onClick={() => setContactPreference(pref.id)}
-                      className={`py-2 px-1 text-center text-xs font-bold rounded-sm border transition-all cursor-pointer ${
+                      className={`py-3 md:py-2 px-1 text-center text-xs font-bold rounded-sm border transition-all cursor-pointer ${
                         contactPreference === pref.id
                           ? 'bg-accent/20 border-accent text-accent font-extrabold shadow-sm'
-                          : 'bg-transparent border-forest-light/40 text-slate-300 hover:border-slate-400'
+                          : 'bg-forest-light/10 md:bg-transparent border-forest-light/40 text-slate-300 hover:border-slate-400'
                       }`}
                     >
                       {pref.label}
@@ -231,8 +231,8 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
               </div>
 
               {/* Input Name */}
-              <div className="space-y-1 text-left">
-                <label className="block text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-montserrat">
+              <div className="space-y-1.5 md:space-y-1 text-left">
+                <label className="block text-[11px] md:text-[10px] font-semibold uppercase tracking-wider text-slate-300 md:text-slate-400 font-montserrat">
                   Seu Nome Completo
                 </label>
                 <input
@@ -244,7 +244,7 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
                     if (errors.name) setErrors({ ...errors, name: undefined });
                   }}
                   disabled={loading}
-                  className={`w-full px-4 py-2.5 text-sm bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-500 ${
+                  className={`w-full px-4 py-3.5 md:py-2.5 text-sm md:text-sm bg-forest-light/30 md:bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/40 md:focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-400 md:placeholder:text-slate-500 ${
                     errors.name ? 'border-accent' : 'border-forest-light/40 focus:border-accent'
                   }`}
                 />
@@ -256,8 +256,8 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
               </div>
 
               {/* Input Email */}
-              <div className="space-y-1 text-left">
-                <label className="block text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-montserrat">
+              <div className="space-y-1.5 md:space-y-1 text-left">
+                <label className="block text-[11px] md:text-[10px] font-semibold uppercase tracking-wider text-slate-300 md:text-slate-400 font-montserrat">
                   E-mail do Investidor
                 </label>
                 <input
@@ -269,7 +269,7 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
                     if (errors.email) setErrors({ ...errors, email: undefined });
                   }}
                   disabled={loading}
-                  className={`w-full px-4 py-2.5 text-sm bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-500 ${
+                  className={`w-full px-4 py-3.5 md:py-2.5 text-sm md:text-sm bg-forest-light/30 md:bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/40 md:focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-400 md:placeholder:text-slate-500 ${
                     errors.email ? 'border-accent' : 'border-forest-light/40 focus:border-accent'
                   }`}
                 />
@@ -281,8 +281,8 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
               </div>
 
               {/* Input Phone */}
-              <div className="space-y-1 text-left">
-                <label className="block text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-montserrat">
+              <div className="space-y-1.5 md:space-y-1 text-left">
+                <label className="block text-[11px] md:text-[10px] font-semibold uppercase tracking-wider text-slate-300 md:text-slate-400 font-montserrat">
                   WhatsApp com DDD
                 </label>
                 <input
@@ -294,7 +294,7 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
                     if (errors.phone) setErrors({ ...errors, phone: undefined });
                   }}
                   disabled={loading}
-                  className={`w-full px-4 py-2.5 text-sm bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-500 ${
+                  className={`w-full px-4 py-3.5 md:py-2.5 text-sm md:text-sm bg-forest-light/30 md:bg-forest-light/20 border rounded-sm text-white focus:outline-none focus:bg-forest-light/40 md:focus:bg-forest-light/35 focus:ring-1 focus:ring-accent transition-all placeholder:text-slate-400 md:placeholder:text-slate-500 ${
                     errors.phone ? 'border-accent' : 'border-forest-light/40 focus:border-accent'
                   }`}
                 />
@@ -306,15 +306,15 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
               </div>
 
               {/* Planta filter selection */}
-              <div className="space-y-1 text-left">
-                <label className="block text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-montserrat">
+              <div className="space-y-1.5 md:space-y-1 text-left">
+                <label className="block text-[11px] md:text-[10px] font-semibold uppercase tracking-wider text-slate-300 md:text-slate-400 font-montserrat">
                   Ativo de Maior Interesse:
                 </label>
                 <select
                   value={interest}
                   onChange={(e) => setInterest(e.target.value)}
                   disabled={loading}
-                  className="w-full px-4 py-2.5 text-sm bg-forest-dark border border-forest-light/40 rounded-sm text-white focus:outline-none focus:border-accent cursor-pointer transition-colors"
+                  className="w-full px-4 py-3.5 md:py-2.5 text-sm md:text-sm bg-forest-dark border border-forest-light/40 rounded-sm text-white focus:outline-none focus:border-accent cursor-pointer transition-colors"
                 >
                   <option value="uniko">UNIKO Vila Olímpia (A partir de R$ 275k)</option>
                   <option value="verus">VERUS Mackenzie (Distorção: R$ 13.900/m²)</option>
@@ -328,25 +328,25 @@ export default function HeroSection({ onSuccess, preselectedProperty = 'uniko' }
                 whileTap={{ scale: 0.99 }}
                 type="submit"
                 disabled={loading}
-                className="w-full py-3.5 px-6 mt-2 bg-accent hover:bg-accent-hover text-forest-dark font-extrabold uppercase tracking-wider text-xs rounded-sm flex items-center justify-center gap-2 cursor-pointer transition-all transition-colors shadow-lg"
+                className="w-full py-4 md:py-3.5 px-6 mt-4 md:mt-2 bg-accent hover:bg-accent-hover text-forest-dark font-extrabold uppercase tracking-wider text-xs md:text-xs rounded-sm flex items-center justify-center gap-2 cursor-pointer transition-all transition-colors shadow-lg"
               >
                 {loading ? (
                   <>
-                    <Loader2 size={16} className="animate-spin text-forest-dark" />
-                    Enviando ao Consultor de Portfólio...
+                    <Loader2 size={18} className="animate-spin text-forest-dark shrink-0" />
+                    <span>Enviando ao Consultor...</span>
                   </>
                 ) : (
                   <>
-                    Quero Receber Book de Dividendos
-                    <ArrowRight size={15} />
+                    <span>Quero Receber Book de Dividendos</span>
+                    <ArrowRight size={16} className="shrink-0" />
                   </>
                 )}
               </motion.button>
             </form>
 
-            <div className="mt-4 flex items-center justify-center gap-2 text-[10px] text-slate-400 font-light">
-              <Shield size={11} className="text-accent" />
-              Seus dados confidenciais sob proteção total (LGPD).
+            <div className="mt-5 md:mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 text-[10px] md:text-[10px] text-slate-400 font-light text-center">
+              <Shield size={13} className="text-accent shrink-0" />
+              <span>Seus dados confidenciais sob proteção total (LGPD).</span>
             </div>
           </motion.div>
         </div>
