@@ -1,0 +1,6 @@
+{
+  "name": "Studios Lucrativos",
+  "description": "Estúdios Lucrativos em São Paulo. Portfólio premium com Uniko Vila Olímpia e Verus Mackenzie com alto rendimento de aluguel por temporada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

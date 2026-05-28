@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #12211a;
+  --color-accent: #c4a47d;
+  --color-accent-hover: #b0916b;
+  --color-forest: #1b3024;
+  --color-forest-dark: #0b1510;
+  --color-forest-light: #2c4437;
+  --color-gold: #c4a47d;
+  --color-bg: #f9fbf9;
+  --color-card-bg: #ffffff;
+  --color-text-main: #141e19;
+  --color-text-muted: #5a6b61;
+}
+
+/* Scrollbar customized with the elegant gold / botanical accents */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4a47d;
+  border-radius: 9999px;
+  border: 2px solid #0b1510;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0916b;
+}
+
+/* Smooth scrolling support for section anchors */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Matches sticky header */
+}
